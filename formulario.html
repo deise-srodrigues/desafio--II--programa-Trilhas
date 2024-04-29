@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição do Trilhas Ma</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-image">
+      <img src="imagem.png" alt="logo do trilhas">
+    </div>
+    <div class="form">
+
+      <form action="#" class="form_estrutura" method="post">
+        <div class="form-header">
+          <h1>Inscreva-se</h1>
+        </div>
+
+        <div class="input-group">
+          <div class="input-box">
+            <label for="name">Nome completo</label>
+            <input id="name" type="text" name="name" placeholder="" required>
+          </div> <!-- Fechamento da div input-box -->
+
+          <div class="input-box">
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+          </div> <!-- Fechamento da div input-box -->
+
+          <div class="input-box">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+          </div> <!-- Fechamento da div input-box -->
+
+          <div class="input-box">
+            <label for="endereco">Endereço completo:</label>
+            <input type="endereco" id="endereco" name="endereco" required>
+          </div> <!-- Fechamento da div input-box -->
+
+          <div class="input-box">
+            <label for="Cidade">Cidade</label>
+            <input type="cidade" id="cidade" name="cidade" required>
+          </div> <!-- Fechamento da div input-box -->
+
+          <div class="input-box">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </div> <!-- Fechamento da div input-box -->
+
+          <div class="input-box">
+            <label for="telefone">Celular:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+          </div>
+
+          <div class="input-box">
+            <label for="escolaridade">Escolaridade:</label>
+            <select id="escolaridade" name="escolaridade" required>
+              <option value="">Selecione</option>
+              <option value="medio">Ensino Médio Completo</option>
+              <option value="medio Incompleto">Ensino Médio Incompleto</option>
+              <option value="superior completo">Ensino Superior Completo</option>
+              <option value="superior incompleto">Ensino Superior Incompleto</option>
+            </select>
+          </div>
+
+          <div class="input-box">
+            <label for="area_interesse">Área de Interesse na Tecnologia:</label>
+            <select id="area_interesse" name="area_interesse" required>
+              <option value="">Selecione</option>
+              <option value="fundamental">BackEnd</option>
+              <option value="fundamental">Ciências de dados</option>
+              <option value="medio">Design</option>
+              <option value="superior">FrontEnd</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="documento"></label>
+
+        <div class="anexo-documento">
+          <div>
+            <label for="input-documento" class="botao-anexo">Documento de identidade</label>
+            <div class="anexos_documento_espef">
+
+              <img src="Vector.svg" class="imagem_anexo"><a href="#"></a></img>
+              <div class="anexo_texto">
+                <p class="anexo_arquivo">Escolhe um arquivo ou arraste pra cá</p>
+                <p class="anexo_formato"> JPG, PNG ou PDF</p>
+              </div>
+              <div>
+                <input type="file" class="estilo_anexo" id="input-documento" name="selecionar"
+                  accept=".pdf,.doc,.docx,.txt" required>
+                <label for="input-documento" class="estilo_label"> Selecionar</label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="anexo-documento">
+            <div>
+              <label for="input-documento" class="botao-anexo">Comprovante de Residência</label>
+              <div class="anexos_documento_espef">
+
+                <img src="Vector.svg" class="imagem_anexo"><a href="#"></a></img>
+                <div class="anexo_texto">
+                  <p class="anexo_arquivo">Escolhe um arquivo ou arraste pra cá</p>
+                  <p class="anexo_formato"> JPG, PNG ou PDF</p>
+                </div>
+                <div>
+                  <input type="file" class="estilo_anexo" id="input-documento" name="selecionar"
+                    accept=".pdf,.doc,.docx,.txt" required>
+                  <label for="input-documento" class="estilo_label"> Selecionar</label>
+                </div>
+              </div>
+            </div>
+
+
+              <div class="anexo-documento">
+                <div>
+                  <label for="input-documento" class="botao-anexo">Escolaridade (Histórico escolar,Diploma ou
+                    Declaração) </label>
+                  <div class="anexos_documento_espef">
+
+                    <img src="Vector.svg" class="imagem_anexo"><a href="#"></a></img>
+                    <div class="anexo_texto">
+                      <p class="anexo_arquivo">Escolhe um arquivo ou arraste pra cá</p>
+                      <p class="anexo_formato"> JPG, PNG ou PDF</p>
+                    </div>
+                    <div>
+                      <input type="file" class="estilo_anexo" id="input-documento" name="selecionar"
+                        accept=".pdf,.doc,.docx,.txt" required>
+                      <label for="input-documento" class="estilo_label"> Selecionar</label>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="senha">
+
+              <div class="input-box">
+
+                <label for="password">Senha</label>
+                <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+              </div>
+
+              <div class="input-box">
+                <label for="confirmPassword">Confirme sua Senha</label>
+                <input id="confirmPassword" type="password" name="confirmPassword"
+                  placeholder="Digite sua senha novamente" required>
+              </div>
+            </div>
+
+            <div class="form_botoes">
+              <button type="submit">Enviar</button>
+              <button type="button" class="cancelar">Cancelar</button>
+            </div>
+          </div>
+        </div>
+  
+      </form>
+</body>
+
+</html>

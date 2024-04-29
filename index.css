@@ -1,0 +1,60 @@
+body {
+    background: #F37820;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+img {
+    width: 500px; 
+    height: auto;
+  }
+  
+
+form {
+    width: 300px;
+  
+    padding: 1rem;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+input {
+    border: none;
+}
+
+input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: -webkit-fill-available;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+.clear {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.solid {
+    background: white;
+    border: none;
+    color: #F37820;
+}
+
+.outline {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+   
+}
